@@ -1,0 +1,111 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 1rem;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .loginForm:hover {
+    transform: scale(1.02);
+  }
+  
+  .loginForm label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .loginForm input {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .loginForm input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .loginForm button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .loginForm button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .loginForm button:active {
+    background-color: #003d80;
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 1200px) {
+    .loginForm {
+      padding: 1.5rem;
+    }
+  
+    .loginForm input, .loginForm button {
+      padding: 0.65rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .loginForm {
+      padding: 1rem;
+    }
+  
+    .loginForm input, .loginForm button {
+      padding: 0.55rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .loginContainer {
+      padding: 0.5rem;
+    }
+  
+    .loginForm {
+      padding: 0.75rem;
+    }
+  
+    .loginForm input, .loginForm button {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .loginForm {
+      width: 90%;
+      padding: 0.5rem;
+    }
+  
+    .loginForm input, .loginForm button {
+      padding: 0.4rem;
+    }
+  }
+  

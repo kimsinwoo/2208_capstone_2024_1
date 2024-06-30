@@ -1,0 +1,142 @@
+.uploadPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 1rem;
+  }
+  
+  .uploadForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .uploadForm:hover {
+    transform: scale(1.02);
+  }
+  
+  .uploadForm label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .uploadForm input {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .uploadForm input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .uploadForm button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .uploadForm button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .uploadForm button:active {
+    background-color: #003d80;
+    transform: scale(0.98);
+  }
+  
+  .imagePreviews {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .imagePreview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: transform 0.3s;
+  }
+  
+  .imagePreview:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1200px) {
+    .uploadForm {
+      padding: 1.5rem;
+    }
+  
+    .uploadForm input, .uploadForm button {
+      padding: 0.65rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .uploadForm {
+      padding: 1rem;
+    }
+  
+    .uploadForm input, .uploadForm button {
+      padding: 0.55rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .uploadPage {
+      padding: 0.5rem;
+    }
+  
+    .uploadForm {
+      padding: 0.75rem;
+    }
+  
+    .uploadForm input, .uploadForm button {
+      padding: 0.5rem;
+    }
+  
+    .imagePreview {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .uploadForm {
+      width: 90%;
+      padding: 0.5rem;
+    }
+  
+    .uploadForm input, .uploadForm button {
+      padding: 0.4rem;
+    }
+  
+    .imagePreview {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
