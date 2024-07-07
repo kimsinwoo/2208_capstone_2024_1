@@ -1,6 +1,6 @@
 # 서버 주소
 
-[서버 주소]([https://silk-gbsw-usedbuy-kimsinwoos-projects.vercel.app/](https://silk-fe.vercel.app/))
+[server adress]([https://silk-gbsw-usedbuy-kimsinwoos-projects.vercel.app/](https://silk-fe.vercel.app/)).
 
 # Getting Started with Create React App
 
